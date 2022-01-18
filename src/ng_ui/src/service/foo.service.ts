@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
 
 export class FooService {
 
-  foos : Foo[] = [];
   private fooUrl = '/helloworld/foo';
 
   constructor( private http: HttpClient) { }
