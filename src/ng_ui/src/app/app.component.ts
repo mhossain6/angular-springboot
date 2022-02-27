@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import Foo from 'src/compnents/model/Foo';
-import {FooService } from "../service/foo.service";
+import { Router } from '@angular/router';
+import { AuthenticationService } from './service/authenticationService';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,15 @@ import {FooService } from "../service/foo.service";
 })
 export class AppComponent implements OnInit {
 
-  constructor(){}
+  constructor(private router: Router,
+   public   authenticationService: AuthenticationService){}
 
   title = 'my-app';
   ngOnInit(): void {
-  
+    if (this.authenticationService.currentUserValue.id != null) {
+      this.router.navigate(['/catworld']);
+    }else {
+      this.router.navigate(['/login']);
+    }
   }
 }

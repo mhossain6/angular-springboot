@@ -1,0 +1,9 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened class="example-sidenav">
+        <my-app-breedmenu (optionSelected)="setSelectedOption($event)" [data]="breedMenuItems">
+        </my-app-breedmenu>
+    </mat-drawer>
+    <mat-drawer-content class="example-drawer-content">
+        <my-app-catbreed [breed_id]="breed_id"></my-app-catbreed>
+    </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,12 @@
+<div class="breed-details" >
+    <div class="breed-details main" *ngIf="breed">
+        <div class="container">
+            <label for="username">Breed Name : {{ breed.name }}</label>
+            <img src="{{photo_url}}"/>
+            <label>Description : {{ breed.description }}</label>
+            <label>Child Friendly : {{ breed.child_friendly }}</label>
+            <label>Vaccination Url : <a href="{{ breed.vcahospitals_url }}"> {{ breed.vcahospitals_url }} </a> </label>
+            <label>Wikipedia Url : <a href="{{ breed.wikipedia_url }}">{{ breed.wikipedia_url }}</a> </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+lable {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+}
+
+.form-group {
+  display: block;
+  width: 200px;
+  padding: 5px;
+  background-color: aquamarine;
+}
+
+.login-form {
+  display: block;
+  width: 300px;
+  position: absolute;
+  right: 50;
+  border: 3px solid #73AD21;
+  align-content: center;
+}

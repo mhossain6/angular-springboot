@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve": "npm run build --project my-app --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
+    "serve": "ng serve --project my-app --disable-host-check --port 4200 --watch --live-reload"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +17,7 @@
     "@angular/compiler": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
+    "@angular/material": "^13.2.4",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
@@ -47,6 +48,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lite-server": "^2.6.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
     "webpack": "^5.66.0",

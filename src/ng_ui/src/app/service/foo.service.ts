@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import Foo from 'src/compnents/model/Foo';
+import Foo from 'src/app/models/Foo';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 export class FooService {
 
-  private fooUrl = '/helloworld/foo';
+  private fooUrl = 'http://localhost:8080/helloworld/foo';
 
   constructor( private http: HttpClient) { }
 
